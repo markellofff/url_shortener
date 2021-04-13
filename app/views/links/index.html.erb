@@ -1,0 +1,32 @@
+<div class="container-fluid text-center">
+  <h1> Showing all shortened URL's</h1>
+  <%= link_to('Short More Url', new_link_path) %>
+    <table class="table">
+      <thead>
+      <th>
+        Long Url
+      </th>
+      <th>
+        Short Url
+      </th>
+      <th>
+        Clicked Counter
+      </th>
+      </thead>
+      <tbody>
+      <% @links.each do |link| %>
+        <tr>
+          <td>
+            <a href=<%= link.url %> class="link-danger"> <%=link.url %></a>
+          </td>
+          <td>
+            <a href=<%= link.short %> class="link-primary"> <%=link.short %></a>
+          </td>
+          <td>
+            <%= link.clicked %>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+</div>

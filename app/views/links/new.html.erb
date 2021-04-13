@@ -1,0 +1,16 @@
+<div class="container-fluid text-center p-5 m-5">
+  <h1>Type Long Url to shorten</h1>
+  <% flash.each do |type, msg| %>
+    <div>
+      <p class="text-danger"><%= msg %></p>
+    </div>
+  <% end %>
+  <%= form_for(@link, locale: true) do |f|%>
+    <div>
+      <div>
+        Long URL: <%= f.text_field :url, placeholder: 'paste long url here ' %>
+        <%= f.submit %>
+      </div>
+    </div>
+  <% end %>
+</div>
