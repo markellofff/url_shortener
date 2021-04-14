@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To Run the application in development mode
+* clone the application using command `git clone https://github.com/markellofff/url_shortener`
 
-Things you may want to cover:
+* You must have mysql asa service running
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+NOTE: This should be extended with the devise gem for the user management and shorten urls according to user.
